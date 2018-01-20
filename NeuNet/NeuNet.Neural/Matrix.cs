@@ -22,6 +22,13 @@ namespace NeuNet.Neural
             set => _source[GetSourceIndex(col, row)] = value;
         }
 
+        public void Load(double[] values)
+        {
+            for(var col = 0; col < Cols; col++)
+                for (var row = 0; row < Rows; row++)
+                    this[col, row] = values[GetSourceIndex(col, row)];
+        }
+
         private int GetSourceIndex(int col, int row)
         {
             return Rows * col + row;
