@@ -1,0 +1,9 @@
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.csprojResolveAssemblyReference.cache
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.csproj.CoreCompileInputs.cache
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.AssemblyInfoInputs.cache
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.AssemblyInfo.cs
+D:\GitHub\nn\NeuNet\NeuNet.Neural\bin\Debug\netcoreapp2.0\NeuNet.Neural.deps.json
+D:\GitHub\nn\NeuNet\NeuNet.Neural\bin\Debug\netcoreapp2.0\NeuNet.Neural.dll
+D:\GitHub\nn\NeuNet\NeuNet.Neural\bin\Debug\netcoreapp2.0\NeuNet.Neural.pdb
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.dll
+D:\GitHub\nn\NeuNet\NeuNet.Neural\obj\Debug\netcoreapp2.0\NeuNet.Neural.pdb
