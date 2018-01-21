@@ -6,14 +6,7 @@ namespace NeuNet.Neural
     {
         public static Matrix Multiply(Matrix left, Matrix right, Matrix result)
         {
-            if (left.Cols != right.Rows)
-                throw new ArgumentException("Matrices are not compatible");
-
-            if(result.Cols != right.Cols)
-                throw new ArgumentException($"The result matrix must have {right.Cols} columns");
-
-            if (result.Rows != left.Rows)
-                throw new ArgumentException($"The result matrix must have {left.Rows} rows");
+            CheckMatricesAreCompatableOrThrow(left, right, result);
 
             for (var resRow = 0; resRow < result.Rows; resRow++)
             {
@@ -29,6 +22,18 @@ namespace NeuNet.Neural
             }
 
             return result;
+        }
+
+        private static void CheckMatricesAreCompatableOrThrow(Matrix left, Matrix right, Matrix result)
+        {
+            if (left.Cols != right.Rows)
+                throw new ArgumentException("Matrices are not compatible");
+
+            if (result.Cols != right.Cols)
+                throw new ArgumentException($"The result matrix must have {right.Cols} columns");
+
+            if (result.Rows != left.Rows)
+                throw new ArgumentException($"The result matrix must have {left.Rows} rows");
         }
     }
 }
