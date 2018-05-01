@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeuNet.Neural
+namespace NeuNet.Neural.Matrixes
 {
     public class Matrix
     {
