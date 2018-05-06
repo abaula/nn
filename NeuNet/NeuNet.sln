@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuNet.ConsoleApp", "NeuNet.ConsoleApp\NeuNet.ConsoleApp.csproj", "{7BA29693-F35B-44EF-8E91-81D7C4D08F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeuNet.ConsoleApp", "NeuNet.ConsoleApp\NeuNet.ConsoleApp.csproj", "{7BA29693-F35B-44EF-8E91-81D7C4D08F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuNet.Neural", "NeuNet.Neural\NeuNet.Neural.csproj", "{C3E62571-7AAE-4E75-AF61-D3F220FB1664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeuNet.Neural", "NeuNet.Neural\NeuNet.Neural.csproj", "{C3E62571-7AAE-4E75-AF61-D3F220FB1664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{C5CAF333-5E8D-4FE4-AC1F-CECF77B84D85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C3E62571-7AAE-4E75-AF61-D3F220FB1664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E62571-7AAE-4E75-AF61-D3F220FB1664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3E62571-7AAE-4E75-AF61-D3F220FB1664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CAF333-5E8D-4FE4-AC1F-CECF77B84D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CAF333-5E8D-4FE4-AC1F-CECF77B84D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CAF333-5E8D-4FE4-AC1F-CECF77B84D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CAF333-5E8D-4FE4-AC1F-CECF77B84D85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
