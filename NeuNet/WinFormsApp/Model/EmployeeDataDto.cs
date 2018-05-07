@@ -13,6 +13,7 @@ namespace WinFormsApp.Model
         }
 
         public int EmployeeId { get; set; }
+        public bool IsEmployee { get; set; }
         public List<SequenceItemDto<SequenceItemKey, float>> MasterDataSequence { get; }
         public List<SequenceItemDto<SequenceItemKey, float>> PredictedDataSequence { get; }
     }

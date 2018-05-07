@@ -36,9 +36,8 @@ namespace WinFormsApp
         private void OnSelectedEmployeeChanged()
         {
             cartesianChartMain.Series.Clear();
-
-
             var values = new List<double>();
+
             for(var i = 0; i < 60; i++)
                 values.Add(-10.0 * _rnd.NextDouble() + 10.0);
 
@@ -103,7 +102,7 @@ namespace WinFormsApp
         private void cartesianChartMain_DataClick(object sender, ChartPoint chartPoint)
         {
 
-            cartesianChartMain.Series[0].Values.Add(-10.0 * _rnd.NextDouble() + 10.0);
+            //cartesianChartMain.Series[0].Values.Add(-10.0 * _rnd.NextDouble() + 10.0);
         }
 
         private void buttonAnalyse_Click(object sender, EventArgs e)

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using WinFormsApp.Model;
 
 namespace WinFormsApp.Services
 {
     class DataService
     {
+        private const string DataFileName = "data";
         private readonly string _dataStoragePath;
         private readonly CssReaderService _cssReaderService;
         private readonly EmployeeDataBuilderService _employeeDataBuilderService;
@@ -29,10 +26,21 @@ namespace WinFormsApp.Services
             CreateDataStorage(employeeData);
         }
 
-
         private void CreateDataStorage(EmployeeDataDto[] employeeData)
         {
+            var dir = new DirectoryInfo(_dataStoragePath);
 
+            foreach (var dto in employeeData)
+            {
+                var subdir = dir.CreateSubdirectory(dto.EmployeeId.ToString());
+                var file = new FileInfo(Path.Combine(subdir.FullName, DataFileName));
+                using (var stream = file.Create())
+                {
+                    var formatter = new BinaryFormatter();
+                    formatter.Serialize(stream, dto);
+                    stream.Close();
+                }
+            }
         }
 
         private void ClearDataStorage()
