@@ -27,8 +27,11 @@ namespace WinFormsApp.Services
                     {
                         var key = new SequenceItemKey {Date = skud.Date, Number = 0};
                         var hourValue = Math.Abs(skud.StartTime.Ticks - weekStartTimeAvg).TicksToHour();
-                        var sequenceItem = new SequenceItemDto<SequenceItemKey, float> {Key = key, Value = hourValue};
+                        var sequenceItem = new SequenceItemDto<SequenceItemKey, double> {Key = key, Value = hourValue};
                         employeeDataItem.MasterDataSequence.Add(sequenceItem);
+
+                        sequenceItem = new SequenceItemDto<SequenceItemKey, double> { Key = key, Value = Double.NaN };
+                        employeeDataItem.AnomaliesDataSequence.Add(sequenceItem);
                     }
                 }
 
